@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body">
+    <header class="main-header">
+      <nav class="main-nav">
+        <a class="main-header__logo">
+        <img src="/source/img/header-logo.svg" width="185" height="96" alt="Город Седона.">
+        </a>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--current">
+              <a>
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                Фото и Видео
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                Форма отзыва
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                HTML ACADEMY
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="feedback">
+      <header class="feedback__header hero">
+       <img class="sedona" src="#" width="" height="" alt="Надпись Седона.">
+       <h1 class="hero__title heading">Оставьте свой отзыв</h1>
+       <p class="hero__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </header>
+
+      <section class="feedback_recall">
+        <h2 class="visually-hidden">Форма отзыва</h2>
+        <form class="feedback__form recall-form" method="post" action="https://echo.htmlacademy.ru/">
+          <fieldset class="recall-form__group">
+            <legend class="recall-form__title">Представьтесь:</legend>
+            <p class="recall-form__field-group field">
+              <label class="field__label" for="user-name">ИМЯ*:</label>
+              <input class="field__input" type="text" id="user-name" name="user-name" placeholder="Пётр" required>
+            </p>
+            <p class="recall-form__field-group field">
+              <label class="field__label" for="user-surname">ФАМИЛИЯ*:</label>
+              <input class="field__input" type="text" id="user-surname" name="user-surname" placeholder="Пустота" required>
+            </p>
+            <p class="recall-form__field-group field">
+              <label class="field__label" for="user-patronymic">Отчество:</label>
+              <input class="field__input" type="text" id="user-patronymic" name="user-patronymic" placeholder="Викторович">
+            </p>
+          </fieldset>
+
+          <fieldset class="recall-form__group">
+            <legend class="recall-form__title">Контактная информация:</legend>
+            <p class="recall-form__field-group field">
+              <label class="field__label" for="user-phone">Контактный телефон*:</label>
+              <input class="field__input" type="tel" id="user-phone" name="user-phone" placeholder="Введите телефон" required>
+            </p>
+            <p class="recall-form__field-group field">
+              <label class="field__label" for="user-email">Электронная почта*:</label>
+              <input class="field__input" type="email" id="user-email" name="user-email" placeholder="Введите e-mail" required>
+            </p>
+          </fieldset>
+
+          <fieldset class="recall-form__group">
+            <legend class="recall-form__title">Ваше Общее впечатление:</legend>
+            <ul class="control recall-form__list recall-form__radio">
+              <li class="recall-form__item">
+                <label class="control radio">
+                  <input class="visually-hidden control__input" type="radio" name="assessment" value="positive" checked>
+                  <span class="control__icon"></span>
+                  <span class="control__label">Скорее положительное</span>
+                </label>
+              </li>
+              <li class="recall-form__item">
+                <label class="control radio">
+                  <input class="visually-hidden control__input" type="radio" name="assessment" value="negative" >
+                  <span class="control__icon"></span>
+                  <span class="control__label">Скорее отрицательное</span>
+                </label>
+              </li>
+              <li class="recall-form__item">
+                <label class="control radio">
+                  <input class="visually-hidden control__input" type="radio" name="assessment" value="difficult" >
+                  <span class="control__icon"></span>
+                  <span class="control__label">Затрудняюсь ответить</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="recall-form__group">
+            <legend class="recall-form__title">Посещенные достопримечательности:</legend>
+            <ul class="control recall-form__list recall-form__checkbox">
+              <li class="recall-form__item">
+                <label class="control checkbox">
+                  <input class="visually-hidden control__input" type="checkbox" name="Devils Bridge" checked >
+                  <span class="control__icon"></span>
+                  <span class="control__label">Мост Дьявола</span>
+                </label>
+              </li>
+              <li class="recall-form__item">
+                <label class="control checkbox">
+                  <input class="visually-hidden control__input" type="checkbox" name="Mount Bell" checked >
+                  <span class="control__icon"></span>
+                  <span class="control__label">Гора-Колокол</span>
+                </label>
+              </li>
+              <li class="recall-form__item">
+                <label class="control checkbox">
+                  <input class="visually-hidden control__input" type="checkbox" name="Slide park" checked >
+                  <span class="control__icon"></span>
+                  <span class="control__label">Слайд-парк</span>
+                </label>
+              </li>
+              <li class="recall-form__item">
+                <label class="control checkbox">
+                  <input class="visually-hidden control__input" type="checkbox" name="Red rocks" >
+                  <span class="control__icon"></span>
+                  <span class="control__label">Красные скалы</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="recall-form__group field">
+            <legend class="recall-form__title" >Опишите свои эмоции:</legend>
+            <textarea class="field__input"  rows="7" placeholder="Опишите подробно все свои восторги "></textarea>
+          </fieldset>
+
+          <button class="recall-form__submit button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+          <span class="recall-form__note">* — обязательные поля</span>
+        </form>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <h2 class="visually-hidden">Социальные сети.</h2>
+      <div class="main-footer__wrapper">
+        <div class="main-footer__hashtag">
+          <p class="hashtag__title">#visitSEDONA</p>
+        </div>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__copyright copyright">
+          <p class="copyright__text">Разработано:</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+  </body>
+</html>
