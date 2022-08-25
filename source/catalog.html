@@ -7,8 +7,8 @@
   <body class="page__body">
     <header class="main-header">
       <nav class="main-nav">
-        <a class="main-header__logo">
-        <img src="/source/img/header-logo.svg" width="185" height="96" alt="Город Седона.">
+        <a class="main-header__logo" href="index.html">
+        <img src="img/header-logo.svg" width="185" height="96" alt="Город Седона.">
         </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -16,22 +16,22 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--current">
-              <a>
+              <a href="index.html">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a href="#">
+              <a href="catalog.html">
                 Фото и Видео
               </a>
             </li>
             <li class="site-list__item">
-              <a href="#">
+              <a href="form.html">
                 Форма отзыва
               </a>
             </li>
             <li class="site-list__item">
-              <a href="#">
+              <a href="https://htmlacademy.ru/">
                 HTML ACADEMY
               </a>
             </li>
@@ -41,7 +41,7 @@
     </header>
 
     <main class="media">
-      <header class="media_header hero">
+      <header class="media__header hero">
         <img class="sedona" src="#" width="" height="" alt="Надпись Седона.">
         <h1 class="hero__title">Фото и видео</h1>
         <p class="hero__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
@@ -54,14 +54,12 @@
             <a class="card__link" href="#">
               <img class="card__image" src="#" width="" height="" alt="Просторы.">
             </a>
-            <a class="card__link" href="#">
-              <h3 class="card__title">неродные просторы</h3>
-            </a>
+            <h3 class="card__title">неродные просторы</h3>
             <p class="card_author">Автор фото: Борис</p>
             <p class="card_inner">
-              <a class="card_button button" href="#">
+              <button class="card_button button" type="button">
                 <span class="visually-hidden">Нравится.</span>
-              </a>
+              </button>
               <b class="card__likes">1350</b>
             </p>
           </li>
@@ -69,14 +67,12 @@
             <a class="card__link" href="#">
               <img class="card__image" src="#" width="" height="" alt="Растительность.">
             </a>
-            <a class="card__link" href="#">
-              <h3 class="card__title">Местная растительность</h3>
-            </a>
+            <h3 class="card__title">Местная растительность</h3>
             <p class="card_author">Автор фото: Сергей</p>
             <p class="card_inner">
-              <a class="card_button button" href="#">
+              <button class="card_button button" type="button">
                 <span class="visually-hidden">Нравится.</span>
-              </a>
+              </button>
               <b class="card__likes">143</b>
             </p>
           </li>
@@ -84,14 +80,12 @@
             <a class="card__link" href="#">
               <img class="card__image" src="#" width="" height="" alt="Дорога.">
             </a>
-            <a class="card__link" href="#">
-              <h3 class="card__title">Дорога на север</h3>
-            </a>
+            <h3 class="card__title">Дорога на север</h3>
             <p class="card_author">Автор фото: Петр</p>
             <p class="card_inner">
-              <a class="card_button button" href="#">
+              <button class="card_button button" type="button">
                 <span class="visually-hidden">Нравится.</span>
-              </a>
+              </button>
               <b class="card__likes">96</b>
             </p>
           </li>
@@ -99,14 +93,12 @@
             <a class="card__link" href="#">
               <img class="card__image" src="#" width="" height="" alt="Мост.">
             </a>
-            <a class="card__link" href="#">
-              <h3 class="card__title">Мост дьявола</h3>
-            </a>
+            <h3 class="card__title">Мост дьявола</h3>
             <p class="card_author">Автор фото: Антон</p>
             <p class="card_inner">
-              <a class="card_button button" href="#">
+              <button class="card_button button" type="button">
                 <span class="visually-hidden">Нравится.</span>
-              </a>
+              </button>
               <b class="card__likes">254</b>
             </p>
           </li>
@@ -116,16 +108,16 @@
        <section class="presentation">
         <h2 class="presentation__title">Все еще сомневаетесь?</h2>
         <p class="presentation__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <a class="presentation__link video" href="#">
+        <div class="presentation__link video">
           <img class="video__image" src="#" width="" height="" alt="Стопкадр из видеопрезентации">
-        </a>
+        </div>
        </section>
     </main>
 
     <footer class="main-footer">
       <h2 class="visually-hidden">Социальные сети.</h2>
       <div class="main-footer__wrapper">
-        <div class="main-footer__hashtag">
+        <div class="main-footer__hashtag hashtag">
           <p class="hashtag__title">#visitSEDONA</p>
         </div>
         <div class="main-footer__social social">
