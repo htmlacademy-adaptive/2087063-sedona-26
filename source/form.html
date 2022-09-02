@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -22,22 +23,24 @@
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--current">
-            <a href="index.html">
+            <a class="site-list__link" href="index.html">
                 Главная
               </a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">
+            <a class="site-list__link" href="catalog.html">
                 Фото и Видео
               </a>
           </li>
-          <li class="site-list__item">
-            <a href="form.html">
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__link" href="form.html">
                 Форма отзыва
               </a>
           </li>
-          <li class="site-list__item">
-            <a href="https://htmlacademy.ru/">
+          <li class="user-list__item">
+            <a class="user-list__link" href="https://htmlacademy.ru/">
                 HTML ACADEMY
               </a>
           </li>
@@ -59,7 +62,8 @@
       <section class="feedback__recall">
         <h2 class="visually-hidden">Форма отзыва</h2>
         <form class="feedback__form recall-form" method="post" action="https://echo.htmlacademy.ru/">
-          <fieldset class="recall-form__group">
+        <div class="feedback__fieldset-container">
+          <fieldset class="recall-form__group recall-form__group">
             <legend class="recall-form__title heading">Представьтесь:</legend>
             <p class="recall-form__field-group field">
               <label class="field__label" for="user-name">ИМЯ*:</label>
@@ -86,7 +90,7 @@
               <input class="field__input" type="email" id="user-email" name="user-email" placeholder="Введите e-mail" required>
             </p>
           </fieldset>
-
+        </div>
           <fieldset class="recall-form__group">
             <legend class="recall-form__title heading">Ваше Общее впечатление:</legend>
             <ul class="control recall-form__list recall-form__radio">
@@ -114,7 +118,7 @@
             </ul>
           </fieldset>
 
-          <fieldset class="recall-form__group">
+          <fieldset class="recall-form__group recall-form__group--flex">
             <legend class="recall-form__title heading">Посещенные достопримечательности:</legend>
             <ul class="control recall-form__list recall-form__checkbox">
               <li class="recall-form__item">
@@ -131,6 +135,8 @@
                   <span class="control__label">Гора-Колокол</span>
                 </label>
               </li>
+            </ul>
+            <ul class="control recall-form__list recall-form__checkbox">
               <li class="recall-form__item">
                 <label class="control checkbox">
                   <input class="visually-hidden control__input" type="checkbox" name="Slide park" checked>
