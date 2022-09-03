@@ -32,15 +32,13 @@
                 Фото и Видео
               </a>
           </li>
-        </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item">
-            <a class="user-list__link" href="form.html">
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">
                 Форма отзыва
               </a>
           </li>
-          <li class="user-list__item">
-            <a class="user-list__link" href="https://htmlacademy.ru/">
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru/">
                 HTML ACADEMY
               </a>
           </li>
@@ -62,7 +60,6 @@
       <section class="feedback__recall">
         <h2 class="visually-hidden">Форма отзыва</h2>
         <form class="feedback__form recall-form" method="post" action="https://echo.htmlacademy.ru/">
-        <div class="feedback__fieldset-container">
           <fieldset class="recall-form__group recall-form__group">
             <legend class="recall-form__title heading">Представьтесь:</legend>
             <p class="recall-form__field-group field">
@@ -90,8 +87,7 @@
               <input class="field__input" type="email" id="user-email" name="user-email" placeholder="Введите e-mail" required>
             </p>
           </fieldset>
-        </div>
-          <fieldset class="recall-form__group">
+          <fieldset class="recall-form__group recall-form__group--size">
             <legend class="recall-form__title heading">Ваше Общее впечатление:</legend>
             <ul class="control recall-form__list recall-form__radio">
               <li class="recall-form__item">
@@ -118,7 +114,7 @@
             </ul>
           </fieldset>
 
-          <fieldset class="recall-form__group recall-form__group--flex">
+          <fieldset class="recall-form__group recall-form__group--size recall-form__group--flex">
             <legend class="recall-form__title heading">Посещенные достопримечательности:</legend>
             <ul class="control recall-form__list recall-form__checkbox">
               <li class="recall-form__item">
@@ -154,7 +150,7 @@
             </ul>
           </fieldset>
 
-          <fieldset class="recall-form__group field">
+          <fieldset class="recall-form__group recall-form__group--size field">
             <legend class="recall-form__title heading">Опишите свои эмоции:</legend>
             <textarea class="field__input" rows="7" placeholder="Опишите подробно все свои восторги "></textarea>
           </fieldset>

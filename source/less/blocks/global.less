@@ -3,18 +3,21 @@ body {
   font-family: "PT Sans", sans-serif;
 }
 
-.page__body {
+.container {
   width: 320px;
   margin: 0 auto;
 }
 
-@tablet-width: 768px;
-@desktop-width: 1200px;
-@mobile-width-only: 767px;
-
 @media (min-width: @tablet-width) {
-  .page__body {
+  .container {
     width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: 1200px;
     margin: 0 auto;
   }
 }

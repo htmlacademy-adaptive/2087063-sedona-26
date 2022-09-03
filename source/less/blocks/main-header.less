@@ -2,14 +2,19 @@
   margin-left: 67px;
 }
 
-.main-header {
-  display: flex;
-}
-
 @media (min-width: @tablet-width) {
   .main-header__logo {
+    position: absolute;
+    left: 291px;
     margin: 0;
-    order: 2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header__logo {
+    position: absolute;
+    left: 507px;
+    margin: 0;
   }
 }
 
