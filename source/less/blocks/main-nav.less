@@ -3,22 +3,15 @@
   padding: 0;
 }
 
-@media (max-width: @tablet-width) {
+@media (min-width: @tablet-width) {
   .main-nav {
     position: relative;
-    width: 768px;
   }
 }
 
-@media (max-width: @desktop-width) {
+@media (min-width: @desktop-width) {
   .main-nav {
     position: relative;
-    width: 1200px;
   }
 }
 
-@media (min-width: @mobile-width-only) {
-  .main-nav {
-    flex-wrap: wrap;
-  }
-}
