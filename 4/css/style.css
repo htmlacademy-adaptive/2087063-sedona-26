@@ -1,13 +1,18 @@
 .main-header__logo {
   margin-left: 67px;
 }
-.main-header {
-  display: flex;
-}
 @media (min-width: 768px) {
   .main-header__logo {
+    position: absolute;
+    left: 291px;
     margin: 0;
-    order: 2;
+  }
+}
+@media (min-width: 1200px) {
+  .main-header__logo {
+    position: absolute;
+    left: 507px;
+    margin: 0;
   }
 }
 .welcome-to-sedona {
@@ -165,12 +170,12 @@
 }
 @media (min-width: 768px) {
   .advantages__description-block {
-    max-width: 256px;
+    width: 256px;
   }
 }
 @media (min-width: 768px) {
   .advantages__description-image {
-    max-width: 512px;
+    width: 512px;
   }
 }
 @media (min-width: 768px) {
@@ -186,7 +191,7 @@
 }
 @media (min-width: 768px) {
   .advantages__no-images-block {
-    max-width: 256px;
+    width: 256px;
   }
 }
 .hashtag__title {
@@ -205,12 +210,6 @@
   background-image: url("../img/back-desktop.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-}
-@media (min-width: 768px) {
-  .feedback__fieldset-container {
-    display: flex;
-    justify-content: space-between;
-  }
 }
 .hero-form__text {
   margin: 0;
@@ -270,6 +269,34 @@
 @media (min-width: 1200px) {
   .recall-form__checkbox {
     display: flex;
+  }
+}
+@media (min-width: 768px) {
+  .recall-form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 648px;
+  }
+}
+@media (min-width: 1200px) {
+  .recall-form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px;
+  }
+}
+@media (min-width: 768px) {
+  .recall-form__group--size {
+    padding: 0;
+    margin: 0;
+    width: 648px;
+  }
+}
+@media (min-width: 1200px) {
+  .recall-form__group--size {
+    padding: 0;
+    margin: 0;
+    width: 960px;
   }
 }
 .field__label {
@@ -393,13 +420,19 @@ body {
   background-color: #ffffff;
   font-family: "PT Sans", sans-serif;
 }
-.page__body {
+.container {
   width: 320px;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
-  .page__body {
+  .container {
     width: 768px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
     margin: 0 auto;
   }
 }
@@ -501,7 +534,6 @@ body {
 @media (min-width: 768px) {
   .site-list {
     display: flex;
-    order: 1;
   }
 }
 .user-list__item {
@@ -521,10 +553,19 @@ body {
   margin: 0;
   padding: 0;
 }
-.main-nav {
-  display: flex;
+@media (max-width: 768px) {
+  .main-nav {
+    position: relative;
+    width: 768px;
+  }
 }
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
+  .main-nav {
+    position: relative;
+    width: 1200px;
+  }
+}
+@media (min-width: 767px) {
   .main-nav {
     flex-wrap: wrap;
   }
