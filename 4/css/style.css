@@ -553,21 +553,14 @@ body {
   margin: 0;
   padding: 0;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .main-nav {
     position: relative;
-    width: 768px;
   }
 }
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .main-nav {
     position: relative;
-    width: 1200px;
-  }
-}
-@media (min-width: 767px) {
-  .main-nav {
-    flex-wrap: wrap;
   }
 }
 @media (min-width: 768px) {
