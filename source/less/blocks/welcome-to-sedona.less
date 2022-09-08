@@ -1,5 +1,32 @@
 .welcome-to-sedona {
+  position: relative;
+  height: 389px;
   background-image: url(../img/back-mobile.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.welcome-to-sedona__vector-mobile-right {
+  position: absolute;
+  top: 333px;
+  left: 0;
+}
+
+.welcome-to-sedona__vector-mobile-left {
+  position: absolute;
+  top: 333px;
+  right: 0;
+}
+
+
+@media (min-width: @tablet-width) {
+  .welcome-to-sedona__vector-mobile-right {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .welcome-to-sedona__vector-mobile-left {
+    display: none;
+  }
 }

@@ -1,5 +1,43 @@
 .media__header {
+  position: relative;
+  height: 158px;
   background-image: url("../img/back-desktop.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .media__header {
+    height: 290px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .media__header {
+    height: 301px;
+  }
+}
+
+.media__vector-mobile-right {
+  position: absolute;
+  top: 101px;
+  left: 0;
+}
+
+.media__vector-mobile-left {
+  position: absolute;
+  top: 101px;
+  right: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .media__vector-mobile-right {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .media__vector-mobile-left {
+    display: none;
+  }
 }

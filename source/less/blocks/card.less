@@ -1,5 +1,6 @@
 .card__title {
   margin: 0;
+  padding-top: 15px;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -32,4 +33,108 @@
   align-items: center;
   text-transform: uppercase;
   color: #000000;
+}
+
+.card__button {
+  margin-top: 11px;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.flex-container {
+  display: flex;
+}
+
+@media (min-width: @tablet-width) {
+  .card__description-container {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .card__description-container--color {
+    background-color: #eaeaea;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .card__button {
+    margin-top: 15px;
+    background-color: #f2f2f2;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .card__inner {
+    margin-right: 20px;
+    background-color: #f2f2f2;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .card__inner--color {
+    background-color: #eaeaea;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .card__button--color {
+    margin-top: 15px;
+    background-color: #eaeaea;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card__description-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card__author {
+    color: #ffffff;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card__title {
+    color: #ffffff;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card__likes {
+    color: #ffffff;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card__inner {
+    background-color: rgba(175, 175, 175, 0.3);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card__button {
+    background-color: rgba(175, 175, 175, 0.3);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card__like-icon {
+    fill: #ffffff;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .card__like-icon {
+    opacity: 0.3;
+  }
 }

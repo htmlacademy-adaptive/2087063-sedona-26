@@ -1,4 +1,8 @@
-.copyright__text {
+.copyright__link {
+  display: block;
+  position: absolute;
+  top: 150px;
+  left: 16px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -6,8 +10,36 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
   color: #000000;
 }
+
+@media (min-width: @tablet-width) {
+  .copyright__link {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+  }
+}
+
+.copyright__link:hover {
+  color: #81b3d2;
+}
+
+.copyright__icon:hover {
+  fill: #81b3d2;
+}
+
+.copyright__link:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.copyright__icon:active {
+  fill: #000000;
+  opacity: 0.3;
+}
+
 
 @media (min-width: @tablet-width) {
   .copyright {
@@ -15,4 +47,11 @@
     padding: 0;
     display: flex;
   }
+}
+
+.copyright__icon {
+  position: absolute;
+  top: -8px;
+  left: 92px;
+  margin-left: 9px;
 }

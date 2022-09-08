@@ -1,6 +1,5 @@
 .hotels-search__title {
   margin: 0;
-  padding-top: 38px;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -10,9 +9,44 @@
   color: #000000;
 }
 
+@media (min-width: @tablet-width) {
+  .hotels-search__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.hotels-search {
+  margin: 0;
+  padding: 38px 18px 65px 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .hotels-search {
+    padding-top: 61px;
+    padding-bottom: 75px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hotels-search {
+    padding-bottom: 83px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .hotels-search__description {
   margin: 0;
-  padding-bottom: 32px;
+  margin-top: 20px;
+  margin-bottom: 48px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -22,6 +56,27 @@
   text-transform: uppercase;
   color: #333333;
 }
+
+@media (min-width: @tablet-width) {
+  .hotels-search__description {
+    width: 435px;
+    padding-left: 167px;
+    padding-right: 166px;
+    margin-top: 24px;
+    margin-bottom: 54px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hotels-search__description {
+    width: 435px;
+    padding-left: 383px;
+    padding-right: 382px;
+    margin-top: 24px;
+    margin-bottom: 59px;
+  }
+}
+
 
 .hotels-search__find-hotel {
   padding-top: 16px;
@@ -36,4 +91,33 @@
   text-transform: uppercase;
   background: #81b3d2;
   color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .hotels-search__find-hotel {
+    padding-top: 14px;
+    padding-bottom: 17px;
+    padding-right: 121px;
+    padding-left: 121px;
+    margin-left: 155px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hotels-search__find-hotel {
+    padding-top: 14px;
+    padding-bottom: 17px;
+    padding-right: 121px;
+    padding-left: 121px;
+    margin-left: 371px;
+  }
+}
+
+.hotels-search__find-hotel:hover {
+  background: #669ec0;
+}
+
+.hotels-search__find-hotel:active {
+  background-color: #5496bd;
+  color: fade(#ffffff, 30%);
 }
