@@ -1,5 +1,20 @@
 .welcome-to-sedona {
+  position: relative;
+  height: 389px;
   background-image: url(../img/back-mobile.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+@media (max-width: @mobile-width-only) {
+  .welcome-to-sedona__image {
+    position: relative;
+    padding-top: 90px;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-bottom: 85px;
+    background-image: url(../img/mobile-vector.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
 }

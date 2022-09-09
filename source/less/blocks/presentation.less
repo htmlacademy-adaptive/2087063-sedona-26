@@ -1,4 +1,6 @@
 .presentation__text {
+  margin: 0;
+  padding: 27px 6px 38px 8px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -7,4 +9,70 @@
   text-align: center;
   text-transform: uppercase;
   color: #333333;
+}
+
+.presentation {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.presentation__link {
+  position: relative;
+}
+
+
+.presentation__video-button {
+  top: 63px;
+  left: 110px;
+  position: absolute;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+@media (min-width: @tablet-width) {
+  .presentation__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .presentation {
+    padding-top: 57px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .presentation {
+    padding-top: 63px;
+    margin-left: 199px;
+    margin-right: 201px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .presentation__text {
+    padding-top: 24px;
+    padding-left: 101px;
+    padding-right: 102px;
+    padding-bottom: 65px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .presentation__text {
+    padding-top: 24px;
+    padding-left: 178px;
+    padding-right: 177px;
+    padding-bottom: 64px;
+  }
 }

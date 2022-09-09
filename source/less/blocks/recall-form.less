@@ -1,12 +1,18 @@
 .recall-form__group {
+  margin: 0;
+  padding: 0;
   border: 0;
 }
 
 .recall-form__list {
+  padding: 0;
   list-style: none;
 }
 
 .recall-form__submit {
+  margin-top: 56px;
+  margin-left: 20px;
+  margin-right: 20px;
   padding-top: 18.5px;
   padding-bottom: 13.5px;
   padding-left: 32px;
@@ -24,7 +30,29 @@
   background: #81b3d2;
 }
 
+@media (min-width: @tablet-width) {
+  .recall-form__submit {
+    margin-top: 48px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 49px;
+    padding-right: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .recall-form__submit {
+    margin-top: 48px;
+    margin-left: 96px;
+    margin-right: 0;
+    padding-left: 58px;
+    padding-right: 71px;
+  }
+}
+
 .recall-form__note {
+  margin-left: 163px;
+  margin-right: 20px;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -36,16 +64,54 @@
 }
 
 @media (min-width: @tablet-width) {
+  .recall-form__note {
+    margin-top: 71px;
+    margin-left: 165px;
+    margin-right: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    align-items: center;
+    text-align: right;
+    text-transform: uppercase;
+    color: #333333;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .recall-form__note {
+    margin-top: 71px;
+    margin-left: 280px;
+  }
+}
+
+
+.recall-form__radio {
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
   .recall-form__radio {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
 @media (min-width: @tablet-width) {
   .recall-form__group--flex {
     display: flex;
+    flex-direction: column;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .recall-form__checkbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 
 @media (min-width: @desktop-width) {
   .recall-form__checkbox {
@@ -57,7 +123,15 @@
   .recall-form {
     display: flex;
     flex-wrap: wrap;
-    width: 648px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .recall-form {
+    margin-left: 120px;
+    margin-right: 120px;
   }
 }
 
@@ -71,16 +145,236 @@
 
 @media (min-width: @tablet-width) {
   .recall-form__group--size {
+    position: relative;
     padding: 0;
-    margin: 0;
+    margin-top: 48px;
     width: 648px;
   }
 }
 
+@media (min-width: @tablet-width) {
+  .recall-form__group--size::before {
+    position: absolute;
+    top: -15px;
+    border: 1px solid #dbdbdb;
+    width: 123px;
+    height: 0;
+    content: "";
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .recall-form__group--size::before {
+    position: absolute;
+    top: -15px;
+    border: 1px solid #dbdbdb;
+    width: 280px;
+    height: 0;
+    content: "";
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .recall-form__group--size::after {
+    position: absolute;
+    right: 0;
+    top: -15px;
+    border: 1px solid #dbdbdb;
+    width: 123px;
+    height: 0;
+    content: "";
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .recall-form__group--size::after {
+    position: absolute;
+    right: 0;
+    top: -15px;
+    border: 1px solid #dbdbdb;
+    width: 280px;
+    height: 0;
+    content: "";
+  }
+}
+
+
 @media (min-width: @desktop-width) {
   .recall-form__group--size {
     padding: 0;
-    margin: 0;
+    margin-top: 32px;
     width: 960px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .recall-form__group--size:nth-child(5) {
+    margin-top: 87px;
+  }
+}
+
+.recall-form__title {
+  width: 320px;
+  padding: 0;
+  padding-top: 24px;
+  padding-bottom: 20px;
+  border-top: 1px solid (#e5e5e5);
+}
+
+@media (min-width: @tablet-width) {
+  .recall-form__title {
+    padding: 0;
+    border: none;
+    width: auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .recall-form__title--size {
+    width: 308px;
+  }
+}
+
+.recall-form__field-group {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.recall-form__field-group:last-child {
+  margin-bottom: 39px;
+}
+
+.recall-form__item {
+  margin-bottom: 36px;
+}
+
+@media (min-width: @tablet-width) {
+  .recall-form__group--row {
+    width: 280px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .recall-form__group--row {
+    width: 430px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .recall-form__group--row:nth-child(2) {
+    position: relative;
+    width: 324px;
+    margin-left: 43px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .recall-form__group--row:nth-child(2) {
+    width: 466px;
+    margin-left: 63px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .recall-form__group--row:nth-child(2)::before {
+    position: absolute;
+    top: -20px;
+    border: 1px solid #dbdbdb;
+    width: 0;
+    height: 338px;
+    content: "";
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .recall-form__group-title:nth-child(3) {
+    padding-top: 24px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .recall-form__item-radio:nth-child(2) {
+    margin-left: 85px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .recall-form__item-radio:nth-child(3) {
+    margin-left: 85px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .recall-form__item-radio:nth-child(3) {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .recall-form__item-radio:nth-child(3) {
+    margin-top: 38px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .recall-form__item {
+    margin-top: 38px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .recall-form__item-checkbox {
+    width: 224px;
+    margin: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .recall-form__item-checkbox:nth-child(2) {
+    margin-left: 84px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .recall-form__item-checkbox:nth-child(4) {
+    margin-left: 84px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .recall-form__item-checkbox:nth-child(4) {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .recall-form__item-checkbox:nth-child(3) {
+    margin-top: 36px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .recall-form__item-checkbox:nth-child(3) {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .recall-form__item-checkbox:nth-child(4) {
+    margin-top: 36px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .recall-form__item-checkbox:nth-child(4) {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .recall-form__item-checkbox:nth-child(2) {
+    margin-left: 0;
+  }
+}
+

@@ -1,5 +1,31 @@
 .media__header {
+  position: relative;
+  height: 158px;
   background-image: url("../img/back-desktop.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+@media (max-width: @mobile-width-only) {
+  .media__sedona-image {
+    padding-top: 52px;
+    padding-left: 45px;
+    padding-right: 46px;
+    padding-bottom: 67px;
+    background-image: url(../img/mobile-vector.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .media__header {
+    height: 290px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .media__header {
+    height: 301px;
+  }
 }

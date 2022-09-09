@@ -7,3 +7,58 @@
   align-items: center;
   color: #000000;
 }
+
+.control__icon {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 46px;
+  height: 46px;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+}
+
+.control {
+  position: relative;
+  padding-left: 41px;
+}
+
+.control__input[type="radio"] + .control__icon {
+  border-radius: 50%;
+}
+
+.control__input[type="radio"]:checked + .control__icon::before {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  background-color: #333333;
+  border-radius: 50%;
+  content: "";
+}
+
+.control__input[type="checkbox"]:checked + .control__icon {
+  background: url("../img/arrow-check.svg");
+  background-size: 22px 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f2f2f2;
+}
+
+.control__input[type="checkbox"]:hover + .control__icon {
+  background-color: #e5e5e5;
+}
+
+.control__input:hover + .control__icon {
+  background-color: #e5e5e5;
+}
+
+.control__input:active + .control__icon {
+  background-color: #d5d5d5;
+}
+
+.control__input[type="checkbox"]:active + .control__icon {
+  background-color: #d5d5d5;
+}
+
