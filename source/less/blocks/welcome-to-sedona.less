@@ -6,27 +6,15 @@
   background-repeat: no-repeat;
 }
 
-.welcome-to-sedona__vector-mobile-right {
-  position: absolute;
-  top: 333px;
-  left: 0;
-}
-
-.welcome-to-sedona__vector-mobile-left {
-  position: absolute;
-  top: 333px;
-  right: 0;
-}
-
-
-@media (min-width: @tablet-width) {
-  .welcome-to-sedona__vector-mobile-right {
-    display: none;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .welcome-to-sedona__vector-mobile-left {
-    display: none;
+@media (max-width: @mobile-width-only) {
+  .welcome-to-sedona__image {
+    position: relative;
+    padding-top: 90px;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-bottom: 85px;
+    background-image: url(../img/mobile-vector.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
   }
 }

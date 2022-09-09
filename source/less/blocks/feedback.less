@@ -6,6 +6,18 @@
   background-repeat: no-repeat;
 }
 
+@media (max-width: @mobile-width-only) {
+  .feedback__sedona-image {
+    padding-top: 52px;
+    padding-left: 45px;
+    padding-right: 46px;
+    padding-bottom: 67px;
+    background-image: url(../img/mobile-vector.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .feedback__header {
     height: 290px;
@@ -18,26 +30,3 @@
   }
 }
 
-.feedback__vector-mobile-right {
-  position: absolute;
-  top: 101px;
-  left: 0;
-}
-
-.feedback__vector-mobile-left {
-  position: absolute;
-  top: 101px;
-  right: 0;
-}
-
-@media (min-width: @tablet-width) {
-  .feedback__vector-mobile-right {
-    display: none;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .feedback__vector-mobile-left {
-    display: none;
-  }
-}
