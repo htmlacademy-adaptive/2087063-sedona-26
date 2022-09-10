@@ -1,10 +1,50 @@
 .welcome-to-sedona {
   position: relative;
   height: 389px;
-  background-image: url(../img/back-mobile.jpg);
-  background-size: 100% auto;
+  background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
+  background-color: #eeeeee;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile-index@2x.jpg");
+    background-size: cover;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/back-tablet-index.jpg");
+    background-size: 100% auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet-index@2x.jpg");
+      background-size: 768px auto;
+      background-position: 50% 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/back-desktop-index.jpg");
+    background-size: 100% auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop-index@2x.jpg");
+      background-size: 1200px auto;
+      background-position: 50% 0;
+    }
+  }
 }
+
+@media (min-width: @tablet-width) {
+  .welcome-to-sedona {
+    height: 518px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .welcome-to-sedona {
+    height: 518px;
+  }
+}
+
 
 @media (max-width: @mobile-width-only) {
   .welcome-to-sedona__image {
@@ -13,7 +53,35 @@
     padding-left: 19px;
     padding-right: 19px;
     padding-bottom: 85px;
-    background-image: url(../img/mobile-vector.svg);
+    background-image: url("../img/mobile-vector.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .welcome-to-sedona__image {
+    width: 461px;
+    height: 350px;
+    padding-top: 77px;
+    padding-bottom: 91px;
+    padding-left: 153px;
+    padding-right: 154px;
+    background-image: url("../img/tablet-vector.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .welcome-to-sedona__image {
+    width: 460px;
+    height: 350px;
+    padding-top: 78px;
+    padding-bottom: 90px;
+    padding-left: 370px;
+    padding-right: 370px;
+    background-image: url("../img/desktop-vector.svg");
     background-position: bottom;
     background-repeat: no-repeat;
   }
