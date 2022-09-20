@@ -4,6 +4,13 @@
   border: 0;
 }
 
+@media (min-width: @tablet-width) {
+  .recall-form__group {
+    position: relative;
+    margin-top: 52px;
+  }
+}
+
 .recall-form__list {
   padding: 0;
   list-style: none;
@@ -76,7 +83,7 @@
 @media (min-width: @tablet-width) {
   .recall-form__note {
     margin-top: 67px;
-    margin-left: 164px;
+    margin-left: 160px;
     margin-right: 0;
     font-style: normal;
     font-weight: 400;
@@ -116,31 +123,31 @@
 
 @media (min-width: @tablet-width) {
   .recall-form__group:nth-child(3) {
-    margin-top: 23px;
+    margin-top: 76px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .recall-form__group:nth-child(3) {
-    margin-top: 30px;
+    margin-top: 84px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .recall-form__group:nth-child(4) {
-    margin-top: 23px;
+    margin-top: 88px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .recall-form__group:nth-child(4) {
-    margin-top: 47px;
+    margin-top: 113px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .recall-form__group:nth-child(5) {
-    margin-top: 37px;
+    margin-top: 89px;
   }
 }
 
@@ -253,7 +260,7 @@
 
 @media (min-width: @desktop-width) {
   .recall-form__group--size:nth-child(5) {
-    margin-top: 81px;
+    margin-top: 133px;
   }
 }
 
@@ -272,22 +279,24 @@
 
 @media (min-width: @tablet-width) {
   .recall-form__title {
+    position: absolute;
+    left: 0;
+    top: -52px;
     padding: 0;
-    padding-bottom: 26px;
     border: none;
-    width: auto;
+    width: 100%;
   }
 }
 
 @media (min-width: @tablet-width) {
   .recall-form__title--introduce {
-    padding-left: 40px;
+    left: 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .recall-form__title--introduce {
-    padding-left: 63px;
+    left: 32px;
   }
 }
 
@@ -297,15 +306,30 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .recall-form__title--contacts {
+    padding-left: 0;
+  }
+}
+
 .recall-form__title--size {
   padding-top: 22px;
 }
 
 @media (min-width: @tablet-width) {
   .recall-form__title--size {
+    left: 169px;
+    top: -65px;
     padding-top: 0;
     padding-bottom: 0;
     width: 308px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .recall-form__title--size {
+    left: 323px;
+    top: -65px;
   }
 }
 
@@ -313,6 +337,12 @@
   position: relative;
   margin-top: 0;
   margin-bottom: 16px;
+}
+
+@media (min-width: @desktop-width) {
+  .recall-form__field-group {
+    margin-bottom: 15px;
+  }
 }
 
 .recall-form__field-group:last-child {
