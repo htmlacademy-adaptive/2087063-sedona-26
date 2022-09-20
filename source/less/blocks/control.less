@@ -20,7 +20,21 @@
 
 .control {
   position: relative;
-  padding-left: 41px;
+  padding-left: 29px;
+}
+
+@media (min-width: @tablet-width) {
+  .control {
+    padding-top: 39px;
+    padding-left: 94px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .control {
+    padding-top: 70px;
+    padding-left: 55px;
+  }
 }
 
 .control__input[type="radio"] + .control__icon {

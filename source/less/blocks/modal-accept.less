@@ -1,0 +1,130 @@
+.modal-accept {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.modal-accept__content {
+  margin: auto;
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.modal-accept__title {
+  margin: 0;
+  padding-top: 36px;
+  padding-left: 37px;
+  padding-right: 39px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+@media (min-width: @tablet-width) {
+  .modal-accept__title {
+    padding-top: 53px;
+    padding-left: 97px;
+    padding-right: 99px;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+  }
+}
+
+.modal-accept__text {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  padding-top: 25px;
+  padding-left: 37px;
+  padding-right: 39px;
+  width: 244px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+@media (min-width: @tablet-width) {
+  .modal-accept__text {
+    width: 420px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+.modal-accept__button-container {
+  width: 320px;
+  margin-top: 57px;
+  background-color: #f2f2f2;
+}
+
+@media (min-width: @tablet-width) {
+  .modal-accept__button-container {
+    margin-top: 55px;
+    width: 640px;
+  }
+}
+
+.modal-accept__button {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 18px 75px 14px 77px;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+@media (min-width: @tablet-width) {
+  .modal-accept__button {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    width: 458px;
+    margin-top: 44px;
+    margin-bottom: 44px;
+    margin-left: 91px;
+    margin-right: 91px;
+  }
+}
+
+.modal-accept--close {
+  display: none;
+}
+

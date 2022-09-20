@@ -8,6 +8,8 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -117,7 +119,7 @@
             </a>
             <div class="card__description-container card__description-container--color">
               <div class="card__legends">
-                <h3 class="card__title">Дорога на север</h3>
+                <h3 class="card__title card__title--desktop">Дорога на север</h3>
                 <p class="card__author">Автор фото: Петр</p>
               </div>
               <p class="card__inner card__inner--color">
@@ -141,7 +143,7 @@
             </a>
             <div class="card__description-container">
               <div class="card__legends">
-                <h3 class="card__title">Мост дьявола</h3>
+                <h3 class="card__title card__title--desktop">Мост дьявола</h3>
                 <p class="card__author">Автор фото: Антон</p>
               </div>
               <p class="card__inner">
@@ -176,10 +178,10 @@
       </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer main-footer--catalog">
       <h2 class="visually-hidden">Социальные сети.</h2>
       <div class="main-footer__hashtag hashtag">
-        <p class="hashtag__title">#visitSEDONA</p>
+        <p class="hashtag__title hashtag__title--catalog">#visitSEDONA</p>
       </div>
       <div class="main-footer__social social">
         <ul class="social__list">
@@ -210,7 +212,7 @@
         </ul>
       </div>
       <div class="main-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">Разработано
+        <a class="copyright__link copyright__link--catalog" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">Разработано
           <svg class="copyright__icon" width="27" height="35">
             <use xlink:href="img/sprite.svg#icon-copyright"></use>
           </svg>
