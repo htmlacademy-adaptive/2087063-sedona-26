@@ -4,19 +4,27 @@
   border: 0;
 }
 
+@media (min-width: @tablet-width) {
+  .recall-form__group {
+    position: relative;
+    margin-top: 52px;
+  }
+}
+
 .recall-form__list {
   padding: 0;
   list-style: none;
 }
 
 .recall-form__submit {
-  margin-top: 56px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-top: 51px;
+  margin-left: 19px;
+  margin-right: 19px;
   padding-top: 18.5px;
   padding-bottom: 13.5px;
-  padding-left: 32px;
-  padding-right: 34px;
+  padding-left: 49px;
+  padding-right: 50px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
@@ -30,23 +38,32 @@
   background: #81b3d2;
 }
 
+.recall-form__submit:hover {
+  background: #669ec0;
+}
+
+.recall-form__submit:active {
+  background-color: #5496bd;
+  color: fade(#ffffff, 30%);
+}
+
 @media (min-width: @tablet-width) {
   .recall-form__submit {
-    margin-top: 48px;
+    margin-top: 44px;
     margin-left: 0;
     margin-right: 0;
-    padding-left: 49px;
-    padding-right: 60px;
+    padding-left: 65px;
+    padding-right: 77px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .recall-form__submit {
-    margin-top: 48px;
-    margin-left: 96px;
+    margin-top: 44px;
+    margin-left: 97px;
     margin-right: 0;
-    padding-left: 58px;
-    padding-right: 71px;
+    padding-left: 95px;
+    padding-right: 107px;
   }
 }
 
@@ -65,8 +82,8 @@
 
 @media (min-width: @tablet-width) {
   .recall-form__note {
-    margin-top: 71px;
-    margin-left: 165px;
+    margin-top: 67px;
+    margin-left: 160px;
     margin-right: 0;
     font-style: normal;
     font-weight: 400;
@@ -81,8 +98,7 @@
 
 @media (min-width: @desktop-width) {
   .recall-form__note {
-    margin-top: 71px;
-    margin-left: 280px;
+    margin-left: 225px;
   }
 }
 
@@ -106,6 +122,40 @@
 }
 
 @media (min-width: @tablet-width) {
+  .recall-form__group:nth-child(3) {
+    margin-top: 76px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .recall-form__group:nth-child(3) {
+    margin-top: 84px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .recall-form__group:nth-child(4) {
+    margin-top: 88px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .recall-form__group:nth-child(4) {
+    margin-top: 113px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .recall-form__group:nth-child(5) {
+    margin-top: 89px;
+  }
+}
+
+.recall-form__checkbox {
+  margin-top: 0;
+}
+
+@media (min-width: @tablet-width) {
   .recall-form__checkbox {
     display: flex;
     flex-wrap: wrap;
@@ -123,6 +173,7 @@
   .recall-form {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 79px;
     margin-left: 60px;
     margin-right: 60px;
   }
@@ -130,6 +181,7 @@
 
 @media (min-width: @desktop-width) {
   .recall-form {
+    margin-top: 43px;
     margin-left: 120px;
     margin-right: 120px;
   }
@@ -147,7 +199,6 @@
   .recall-form__group--size {
     position: relative;
     padding: 0;
-    margin-top: 48px;
     width: 648px;
   }
 }
@@ -155,7 +206,7 @@
 @media (min-width: @tablet-width) {
   .recall-form__group--size::before {
     position: absolute;
-    top: -15px;
+    top: -41px;
     border: 1px solid #dbdbdb;
     width: 123px;
     height: 0;
@@ -166,7 +217,7 @@
 @media (min-width: @desktop-width) {
   .recall-form__group--size::before {
     position: absolute;
-    top: -15px;
+    top: -41px;
     border: 1px solid #dbdbdb;
     width: 280px;
     height: 0;
@@ -178,7 +229,7 @@
   .recall-form__group--size::after {
     position: absolute;
     right: 0;
-    top: -15px;
+    top: -41px;
     border: 1px solid #dbdbdb;
     width: 123px;
     height: 0;
@@ -190,7 +241,7 @@
   .recall-form__group--size::after {
     position: absolute;
     right: 0;
-    top: -15px;
+    top: -41px;
     border: 1px solid #dbdbdb;
     width: 280px;
     height: 0;
@@ -209,7 +260,7 @@
 
 @media (min-width: @desktop-width) {
   .recall-form__group--size:nth-child(5) {
-    margin-top: 87px;
+    margin-top: 133px;
   }
 }
 
@@ -217,21 +268,68 @@
   width: 320px;
   padding: 0;
   padding-top: 24px;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
   border-top: 1px solid (#e5e5e5);
+}
+
+.recall-form__title--radio {
+  padding-bottom: 15px;
+  padding-top: 20px;
 }
 
 @media (min-width: @tablet-width) {
   .recall-form__title {
+    position: absolute;
+    left: 0;
+    top: -52px;
     padding: 0;
     border: none;
-    width: auto;
+    width: 100%;
   }
 }
 
 @media (min-width: @tablet-width) {
+  .recall-form__title--introduce {
+    left: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .recall-form__title--introduce {
+    left: 32px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .recall-form__title--contacts {
+    padding-left: 5px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .recall-form__title--contacts {
+    padding-left: 0;
+  }
+}
+
+.recall-form__title--size {
+  padding-top: 22px;
+}
+
+@media (min-width: @tablet-width) {
   .recall-form__title--size {
+    left: 169px;
+    top: -65px;
+    padding-top: 0;
+    padding-bottom: 0;
     width: 308px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .recall-form__title--size {
+    left: 323px;
+    top: -65px;
   }
 }
 
@@ -241,11 +339,18 @@
   margin-bottom: 16px;
 }
 
+@media (min-width: @desktop-width) {
+  .recall-form__field-group {
+    margin-bottom: 15px;
+  }
+}
+
 .recall-form__field-group:last-child {
   margin-bottom: 39px;
 }
 
 .recall-form__item {
+  margin-top: 14px;
   margin-bottom: 36px;
 }
 
@@ -279,7 +384,7 @@
 @media (min-width: @tablet-width) {
   .recall-form__group--row:nth-child(2)::before {
     position: absolute;
-    top: -20px;
+    top: -55px;
     border: 1px solid #dbdbdb;
     width: 0;
     height: 338px;
@@ -295,7 +400,13 @@
 
 @media (min-width: @tablet-width) {
   .recall-form__item-radio:nth-child(2) {
-    margin-left: 85px;
+    margin-left: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .recall-form__item-radio:nth-child(2) {
+    margin-left: 71px;
   }
 }
 
@@ -313,14 +424,19 @@
 
 @media (min-width: @desktop-width) {
   .recall-form__item-radio:nth-child(3) {
-    margin-top: 38px;
+    margin-left: 78px;
+    margin-top: 10px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .recall-form__item {
-    margin-top: 38px;
+    margin-top: 11px;
   }
+}
+
+.recall-form__item-checkbox {
+  margin-top: 12px;
 }
 
 @media (min-width: @tablet-width) {
@@ -332,13 +448,13 @@
 
 @media (min-width: @tablet-width) {
   .recall-form__item-checkbox:nth-child(2) {
-    margin-left: 84px;
+    margin-left: 32px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .recall-form__item-checkbox:nth-child(4) {
-    margin-left: 84px;
+    margin-left: 32px;
   }
 }
 
@@ -357,6 +473,8 @@
 @media (min-width: @desktop-width) {
   .recall-form__item-checkbox:nth-child(3) {
     margin-top: 0;
+    margin-left: 65px;
+    width: 170px;
   }
 }
 
@@ -369,12 +487,14 @@
 @media (min-width: @desktop-width) {
   .recall-form__item-checkbox:nth-child(4) {
     margin-top: 0;
+    width: 180px;
+    margin-left: 46px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .recall-form__item-checkbox:nth-child(2) {
-    margin-left: 0;
+    width: 170px;
+    margin-left: 12px;
   }
 }
-

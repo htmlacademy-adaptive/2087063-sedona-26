@@ -9,7 +9,7 @@ import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
-import {deleteAsync}  from "del";
+import {deleteAsync}  from 'del';
 import svgstore from 'gulp-svgstore';
 
 

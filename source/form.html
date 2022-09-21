@@ -8,12 +8,15 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
   <div class="container">
     <header class="main-header">
       <nav class="main-nav main-nav--nojs">
+        <!-- Для работы меню с JS класс main-nav--nojs убирается. Класс main-nav--opened используется для открытия меню, а класс main-nav--closed для закрытия -->
         <a class="main-header__logo" href="index.html">
           <img src="img/header-logo.svg" width="185" height="96" alt="Город Седона.">
         </a>
@@ -60,7 +63,7 @@
         <h2 class="visually-hidden">Форма отзыва</h2>
         <form class="feedback__form recall-form" method="post" action="https://echo.htmlacademy.ru/">
           <fieldset class="recall-form__group recall-form__group--row">
-            <legend class="recall-form__title heading">Представьтесь:</legend>
+            <legend class="recall-form__title recall-form__title--introduce heading">Представьтесь:</legend>
             <p class="recall-form__field-group field">
               <label class="field__label" for="user-name">ИМЯ*:</label>
               <input class="field__input" type="text" id="user-name" name="user-name" placeholder="Имя" required>
@@ -76,7 +79,7 @@
           </fieldset>
 
           <fieldset class="recall-form__group recall-form__group--row">
-            <legend class="recall-form__title heading">Контактная информация:</legend>
+            <legend class="recall-form__title recall-form__title--contacts  heading">Контактная информация:</legend>
             <p class="recall-form__field-group field">
               <label class="field__label field__label--position" for="user-phone">Контактный телефон*:</label>
               <input class="field__input field__input--size" type="tel" id="user-phone" name="user-phone" placeholder="Введите телефон" required>
@@ -93,8 +96,8 @@
             </p>
           </fieldset>
           <fieldset class="recall-form__group recall-form__group--size">
-            <legend class="recall-form__title heading">Ваше Общее впечатление:</legend>
-            <ul class="control recall-form__list recall-form__radio">
+            <legend class="recall-form__title recall-form__title--radio heading">Ваше Общее впечатление:</legend>
+            <ul class="control control-radio recall-form__list recall-form__radio">
               <li class="recall-form__item  recall-form__item-radio">
                 <label class="control radio">
                   <input class="visually-hidden control__input" type="radio" name="assessment" value="positive" checked>
@@ -164,10 +167,10 @@
       </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer main-footer--form">
       <h2 class="visually-hidden">Социальные сети.</h2>
       <div class="main-footer__hashtag hashtag">
-        <p class="hashtag__title">#visitSEDONA</p>
+        <p class="hashtag__title hashtag__title--form">#visitSEDONA</p>
       </div>
       <div class="main-footer__social social">
         <ul class="social__list">
@@ -207,6 +210,23 @@
       </div>
     </footer>
 
+    <div class="modal-error modal-error--close">
+      <div class="modal-error__content">
+        <h2 class="modal-error__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
+        <p class="modal-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal-error__button" type="submit">Ок</button>
+      </div>
+    </div>
+
+    <div class="modal-accept modal-accept--close">
+      <div class="modal-accept__content">
+        <h2 class="modal-accept__title">Ваш отзыв отправлен!</h2>
+        <p class="modal-accept__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="modal-accept__button-container">
+          <button class="modal-accept__button" type="submit">Закрыть окно</button>
+        </div>
+      </div>
+    </div>
   </div>
 
 </body>

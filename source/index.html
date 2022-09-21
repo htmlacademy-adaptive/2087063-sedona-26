@@ -8,12 +8,15 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
   <div class="container">
     <header class="main-header">
-      <nav class="main-nav main-nav--nojs ">
+      <nav class="main-nav main-nav--nojs">
+        <!-- Для работы меню с JS класс main-nav--nojs убирается. Класс main-nav--opened используется для открытия меню, а класс main-nav--closed для закрытия -->
         <a class="main-header__logo" href="index.html">
           <img src="img/header-logo.svg" width="185" height="96" alt="Город Седона.">
         </a>
@@ -53,8 +56,8 @@
       </section>
 
       <section class="introduction">
-        <h2 class="introduction__description">Седона — небольшой<br> городок в Аризоне,<br> заслуживающий большего!</h2>
-        <p class="introduction__reasons">Рассмотрим 5 причин, по которым<br> Седона круче, чем Гранд-Каньон!</p>
+        <h2 class="introduction__description">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+        <p class="introduction__reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
 
       <section class="advantages">
@@ -62,7 +65,7 @@
         <ul class="advantages__list">
           <li class="advantages__item">
             <div class="advantages__description-block">
-              <h3 class="advantages__title-city">Настойщий городок</h3>
+              <h3 class="advantages__title-city">Настоящий городок</h3>
               <p class="advantages__number-city">— №1 —</p>
               <p class="advantages__description-city">Седона не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
@@ -78,7 +81,7 @@
             </div>
             <ul class="advantages__list-offer">
               <li class="advantages__item-offer advantages__item-offer--house">
-                <h3 class="advantages__title-offer">Жильё</h3>
+                <h3 class="advantages__title-offer">Жильe</h3>
                 <p class="advantages__offer">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
               <li class="advantages__item-offer advantages__item-offer--food">
@@ -93,9 +96,9 @@
           </li>
           <li class="advantages__item">
             <div class="advantages__description-block advantages__description-block--replace">
-              <h3 class="advantages__title-city">Там есть мост дьявола</h3>
+              <h3 class="advantages__title-city advantages__title-city--bridge">Там есть мост дьявола</h3>
               <p class="advantages__number-city">— №2 —</p>
-              <p class="advantages__description-city">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              <p class="advantages__description-city advantages__description-city--bridge">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <div class="advantages__description-image">
               <picture>
@@ -110,21 +113,21 @@
           </li>
           <li class="advantages__item-no-images">
             <div class="advantages__no-images-block advantages__no-images-block--area">
-              <h3 class="advantages__title">Небольшая площадь</h3>
+              <h3 class="advantages__title advantages__title--area">Небольшая площадь</h3>
               <p class="advantages__number">— №3 —</p>
               <p class="advantages__description">ВСЕ интересные места находятся очень близко</p>
             </div>
           </li>
           <li class="advantages__item-no-images">
             <div class="advantages__no-images-block advantages__no-images-block--road">
-              <h3 class="advantages__title">Красивая дорога</h3>
+              <h3 class="advantages__title advantages__title--road">Красивая дорога</h3>
               <p class="advantages__number">— №4 —</p>
-              <p class="advantages__description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+              <p class="advantages__description advantages__description--road">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
             </div>
           </li>
           <li class="advantages__item-no-images">
             <div class="advantages__no-images-block advantages__no-images-block--no-border advantages__no-images-block--tourists">
-              <h3 class="advantages__title">Мало туристов</h3>
+              <h3 class="advantages__title advantages__title--tourists">Мало туристов</h3>
               <p class="advantages__number">— №5 —</p>
               <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
             </div>
@@ -140,11 +143,8 @@
 
       <section class="map">
         <h2 class="visually-hidden">Наше местоположение.</h2>
-        <picture>
-          <source media="(min-width: 1200px)"  srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)"  srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
-          <img class="map__we-on-map" src="img/map-mobile.jpg"  srcset="img/map-mobile@2x.jpg 2x" alt="Мы на карте.">
-        </picture>
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d840262.5220730902!2d-111.76389656599423!3d34.64774526731653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1663712074791!5m2!1sru!2sru"  height="350" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </section>
 
     </main>
