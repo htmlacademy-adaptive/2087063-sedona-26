@@ -399,7 +399,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .recall-form__item-radio:nth-child(2) {
+  .recall-form__item-radio:nth-child(2n) {
     margin-left: 60px;
   }
 }
@@ -413,6 +413,18 @@
 @media (min-width: @desktop-width) {
   .recall-form__item-radio:nth-child(3) {
     margin-left: 85px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .recall-form__item-radio:nth-child(4n) {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .recall-form__item-radio:nth-child(5n) {
+    margin-left: 71px;
   }
 }
 
@@ -447,13 +459,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .recall-form__item-checkbox:nth-child(2) {
-    margin-left: 32px;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .recall-form__item-checkbox:nth-child(4) {
+  .recall-form__item-checkbox:nth-child(2n) {
     margin-left: 32px;
   }
 }
@@ -465,7 +471,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .recall-form__item-checkbox:nth-child(3) {
+  .recall-form__item-checkbox:nth-child(n+3) {
     margin-top: 36px;
   }
 }
@@ -475,12 +481,6 @@
     margin-top: 0;
     margin-left: 65px;
     width: 170px;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .recall-form__item-checkbox:nth-child(4) {
-    margin-top: 36px;
   }
 }
 
