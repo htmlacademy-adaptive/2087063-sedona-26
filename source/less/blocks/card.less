@@ -54,7 +54,7 @@
 @media (min-width: @tablet-width) {
   .card__description-container {
     display: flex;
-    height: 80px;
+    min-height: 80px;
     background-color: #f2f2f2;
     justify-content: space-between;
   }
@@ -68,22 +68,19 @@
 
 @media (min-width: @tablet-width) {
   .card__button {
-    margin-top: 15px;
+    margin: 0;
+    height: 21px;
+    padding-top: 28px;
     background-color: #f2f2f2;
   }
 }
 
 @media (min-width: @tablet-width) {
   .card__inner {
+    display: flex;
     margin-right: 20px;
-    margin-top: 11px;
+    margin-top: 0;
     background-color: #f2f2f2;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .card__button {
-    padding-right: 4px;
   }
 }
 
@@ -95,7 +92,6 @@
 
 @media (min-width: @tablet-width) {
   .card__button--color {
-    margin-top: 15px;
     background-color: #eaeaea;
   }
 }
@@ -127,8 +123,15 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .card__likes {
+    padding-top: 32px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .card__likes {
+    padding-top: 32px;
     color: #ffffff;
   }
 }
@@ -141,6 +144,10 @@
 
 @media (min-width: @desktop-width) {
   .card__button {
+    margin: 0;
+    height: 21px;
+    padding-right: 9px;
+    padding-top: 28px;
     background-color: rgb(0 0 0 / 0%);
   }
 }

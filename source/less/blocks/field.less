@@ -115,10 +115,28 @@
 
 @media (min-width: @desktop-width) {
   .field__input-textarea {
-    margin-top: 0;
-    padding-top: 18px;
-    margin-left: 97px;
-    width: 752px;
-    height: 143px;
+    margin-top: 28px;
+    margin-left: 96px;
+    margin-right: 96px;
+    width: 768px;
+    height: 160px;
   }
+}
+
+.field__input::-webkit-input-placeholder {
+  opacity: 0.3;
+}
+
+.field__input::-moz-placeholder {
+  opacity: 0.3;
+}
+
+.field__input[type="text"]::-webkit-input-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.field__input[type="text"]::-moz-placeholder {
+  color: #000000;
+  opacity: 1;
 }
